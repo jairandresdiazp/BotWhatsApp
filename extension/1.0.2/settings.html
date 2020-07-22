@@ -1,0 +1,110 @@
+<html>
+   <head>
+      <title>WhatsApp API</title>
+      <style>
+         body {
+         font-family: 'Open Sans', sans-serif;
+         font-size: 100%;
+         font-weight: 400;
+         background: #f2f2f2;
+         }
+         h1 {
+         font-weight: 300 !important;
+         color: #0e293d;
+         }
+         a {
+         color: #2196F3;
+         }
+         label {
+         display: block;
+         float: left;
+         text-align: right;
+         width: 100px;
+         display: none;
+         }
+         .form-gropup {
+         clear: both;
+         margin: 0 auto;
+         width: 300px;
+         }
+         .form-gropup input {
+         height: 35px;
+         line-height: 35px;
+         border: 1px solid #ccc;
+         width: 300px;
+         padding: 5px 12px;
+         font-family: 'Open Sans', sans-serif;
+         }
+         .form-gropup .btn {
+         margin-top: 20px;
+         background: #2196F3;
+         border: none;
+         color: #fff;
+         padding: 0;
+         height: 40px;
+         line-height: 40px;
+         font-size: 110%;
+         cursor: pointer;
+         }
+         .form-gropup .btn:hover {
+         background: #42A5F5;
+         }
+         .form-gropup .btn:disabled {
+         background: #fff;
+         color: #ccc;
+         }
+         #wab_options {
+         background: #fff;
+         padding: 30px 30px 40px 30px;
+         width: 600px;
+         margin: 0 auto;
+         text-align: center;
+         margin-top: 10%;
+         -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.17);
+         box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.17);
+         }
+         .wab_validated {
+         line-height: 1.5em;
+         margin: 20px 0;
+         display: none;
+         }
+         .wab_validated.ko {
+         color: #F44336 !important;
+         }
+         .wab_validated.ok {
+         border: 1px solid #2196F3;
+         background: #B2DFDB;
+         color: #000 !important;
+         padding: 20px;
+         font-size: 90%;
+         }
+         #wab_tip {
+         margin-top: 20px;
+         font-size: 80%;
+         color: #0e293d;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="wab_options">
+         <h1>Enter your token</h1>
+         <div class="wab_validated ok">
+            <p><strong>Your account is now validated</strong></p>
+            <p>Browse <a href="https://web.whatsapp.com"> WhatsApp Web </a> and follow the instructions to connect the phone you wish to link to your account.</p>
+            <p>Once connected with the new phone number <strong> will be linked automatically. </Strong> Then you can integrate it as you want through the API.</p>
+         </div>
+         <div class="wab_validated ko">This token is not valid.</div>
+         <div class="form-gropup">
+            <label for="wab_key">Key token</label>
+            <input id="wab_key" name="wab_key" type="text" placeholder="2e4c1800-edcc-4f04-8bf6-16a76f2e5229" />
+         </div>
+         <div class="form-gropup">
+            <label for="wab_validate">&nbsp;</label>
+            <input id="wab_validate" name="wab_validate" type="button" value="Validate" class="btn" />
+         </div>
+         <p id="wab_tip"><strong>You do not have a token? </strong> <br> Generate it in your account and connect to the API</p>
+      </div>
+      <script src="config.js"></script>
+      <script src="settings.js"></script>
+   </body>
+</html>

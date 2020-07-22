@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="google" content="notranslate" />
+	<meta name="google-site-verification" content="qtkpP1w_ywxkrstkDzSHs_M4fL1Jua3IO-2NRxClDQs" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="description" content="Allows you to send messages automatically from a WhatsApp account." />
+	<meta name="og:description" content="Allows you to send messages automatically from a WhatsApp account."/>
+	<meta name="og:url" content="https://web-whatsapp.azurewebsites.net/"/>
+	<meta name="og:title" content="<%= headtitle %>"/>
+	<meta name="og:image" content="https://web-whatsapp.azurewebsites.net/images/landingpage/about.jpg"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title><%= headtitle %></title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="../stylesheets/landingpage/bootstrap.min.css" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="../stylesheets/landingpage/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="../stylesheets/landingpage/owl.theme.default.css" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="../stylesheets/landingpage/magnific-popup.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="../stylesheets/landingpage/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="../stylesheets/landingpage/style.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- jQuery Plugins -->
+	<script src="https://www.google.com/recaptcha/api.js?hl=en" async defer></script>
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="home">
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('../images/landingpage/background1.jpg');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Nav -->
+		<nav id="nav" class="navbar nav-transparent">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a href="/">
+							<img class="logo" src="./logo.png" alt="logo">
+							<img class="logo-alt" src="./logo.png" alt="logo">
+						</a>
+					</div>
+					<!-- /Logo -->
+
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
+
+				<!--  Main navigation  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#pricing">Prices</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><button class="main-btn" onclick="location.href='/login'">Log In</button></li>
+				</ul>
+				<!-- /Main navigation -->
+
+			</div>
+		</nav>
+		<!-- /Nav -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<div class="container">
+				<div class="row">
+
+					<!-- home content -->
+					<div class="col-md-10 col-md-offset-1">
+						<div class="home-content">
+							<h1 class="white-text">WhatsApp API</h1>
+							<p class="white-text">The simplest WhatsApp API in the world.</p>
+							<button class="white-btn" onclick="window.open('https://api.whatsapp.com/send?phone=573143277989&text=get started')">Demo</button>
+							<button class="main-btn" onclick="location.href='#contact'">Contact</button>
+						</div>
+					</div>
+					<!-- /home content -->
+
+				</div>
+			</div>
+		</div>
+		<!-- /home wrapper -->
+
+	</header>
+	<!-- /Header -->
+
+	<!-- About -->
+	<div id="about" class="section sm-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Feature</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-cogs"></i>
+						<h3>Simple</h3>
+						<p>Create expressive interactive integrations without dealing with low-level details.</p>						
+					</div>
+				</div>
+				<!-- /about -->
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-magic"></i>
+						<h3>Realtime</h3>
+						<p>The messages are processed in real time by both ends generating better opportunity.</p>
+					</div>
+				</div>
+				<!-- /about -->
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-mobile"></i>
+						<h3>Flexible</h3>
+						<p>Use components from the ecosystem to add additional capabilities to your API.</p>
+					</div>
+				</div>
+				<!-- /about -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /About -->
+
+	<!-- Why Choose Us -->
+	<div id="features" class="section sm-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- why choose us content -->
+				<div class="col-md-6">
+					<div class="section-header">
+						<h2 class="title">Why Choose Us</h2>
+					</div>
+					<p>We have the best technology to connect to the largest potential market in the world with only one whatsapp account can achieve increase sales or improve customer perception up to 100%</p>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Realtime messages.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Easy integration.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Compatible with any programming language.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Allows connection from any system.</p>
+					</div>
+				</div>
+				<!-- /why choose us content -->
+
+				<!-- About slider -->
+				<div class="col-md-6">
+					<img class="img-responsive" src="../images/landingpage/about.jpg" alt="">
+				</div>
+				<!-- /About slider -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Why Choose Us -->
+
+
+	<!-- Numbers -->
+	<div id="numbers" class="section sm-padding">
+
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('../images/landingpage/background2.jpg');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="fa fa-users"></i>
+						<h3 class="white-text"><span class="counter">84</span></h3>
+						<span class="white-text">Happy clients</span>
+					</div>
+				</div>
+				<!-- /number -->
+
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="fa fa-trophy"></i>
+						<h3 class="white-text"><span class="counter">1</span></h3>
+						<span class="white-text">Awards won</span>
+					</div>
+				</div>
+				<!-- /number -->
+
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="fa fa-coffee"></i>
+						<h3 class="white-text"><span class="counter">154</span>K</h3>
+						<span class="white-text">Cups of Coffee</span>
+					</div>
+				</div>
+				<!-- /number -->
+
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="fa fa-file"></i>
+						<h3 class="white-text"><span class="counter">20</span></h3>
+						<span class="white-text">Projects completed</span>
+					</div>
+				</div>
+				<!-- /number -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Numbers -->
+
+	<!-- Pricing -->
+	<div id="pricing" class="section sm-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Pricing Table</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- pricing -->
+				<div class="col-sm-4">
+					<div class="pricing">
+						<div class="price-head">
+							<span class="price-title">Basic plan</span>
+							<div class="price">
+								<h3>$20<span class="duration">/ month</span></h3>
+							</div>
+						</div>
+						<ul class="price-content">
+							<li>
+								<p>1 User</p>
+							</li>
+							<li>
+								<p>1000 Messages</p>
+							</li>
+							<li>
+								<p>1 Webhook</p>
+							</li>
+							<li>
+								<p>Log for 10 days</p>
+							</li>
+							<li>
+								<p>* 0.05 per additional message</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<button class="outline-btn">Purchase now</button>
+						</div>
+					</div>
+				</div>
+				<!-- /pricing -->
+
+				<!-- pricing -->
+				<div class="col-sm-4">
+					<div class="pricing">
+						<div class="price-head">
+							<span class="price-title">Silver plan</span>
+							<div class="price">
+								<h3>$40<span class="duration">/ month</span></h3>
+							</div>
+						</div>
+						<ul class="price-content">
+							<li>
+								<p>3 User</p>
+							</li>
+							<li>
+								<p>5000 Messages</p>
+							</li>
+							<li>
+								<p>1 Webhook by phone</p>
+							</li>
+							<li>
+								<p>Log for 30 days</p>
+							</li>
+							<li>
+								<p>* 0.06 per additional message</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<button class="outline-btn">Purchase now</button>
+						</div>
+					</div>
+				</div>
+				<!-- /pricing -->
+
+				<!-- pricing -->
+				<div class="col-sm-4">
+					<div class="pricing">
+						<div class="price-head">
+							<span class="price-title">Gold plan</span>
+							<div class="price">
+								<h3>$60<span class="duration">/ month</span></h3>
+							</div>
+						</div>
+						<ul class="price-content">
+							<li>
+								<p>Unlimited User</p>
+							</li>
+							<li>
+								<p>1000 Messages</p>
+							</li>
+							<li>
+								<p>Unlimited Webhook</p>
+							</li>
+							<li>
+								<p>Log for 60 days</p>
+							</li>
+							<li>
+								<p>* 0.07 per additional message</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<button class="outline-btn">Purchase now</button>
+						</div>
+					</div>
+				</div>
+				<!-- /pricing -->
+
+			</div>
+			<!-- Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Pricing -->
+
+	<!-- Contact -->
+	<div id="contact" class="section sm-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section-header -->
+				<div class="section-header text-center">
+					<h2 class="title">Get in touch</h2>
+				</div>
+				<!-- /Section-header -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-phone"></i>
+						<h3>Phone</h3>
+						<p>+57 (314) 327-7989</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-envelope"></i>
+						<h3>Email</h3>
+						<p>jairandresdiazp@gmail.com</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-map-marker"></i>
+						<h3>Address</h3>
+						<p>Calle 93 #19-55 Bogota DC 110221</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact form -->
+				<div class="col-md-8 col-md-offset-2">
+					<form id="contact-form" class="contact-form" >
+						<input id="name" type="text" class="input" placeholder="Name" autocomplete="name"required>
+						<input id="email" type="email" class="input" placeholder="Email" autocomplete="email" required>
+						<input id="subject" type="text" class="input" placeholder="Subject" autocomplete="subject" required>
+						<textarea id="txtmessage" class="input" placeholder="Message" autocomplete="message" required></textarea>
+						<div class="g-recaptcha" data-sitekey="<%= recaptchakey %>" data-callback="onSubmit" data-size="invisible"></div>
+						<button class="main-btn" type="submit">Send message</button>
+					</form>
+				</div>
+				<!-- /contact form -->
+
+			</div>
+			<!-- /Row -->
+			
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Contact -->
+
+
+	<!-- Footer -->
+	<footer id="footer" class="sm-padding bg-dark">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!-- footer follow -->
+					<ul class="footer-follow">
+						<li><a ><i class="fa fa-facebook"></i></a></li>
+						<li><a ><i class="fa fa-twitter"></i></a></li>
+						<li><a ><i class="fa fa-google-plus"></i></a></li>
+						<li><a ><i class="fa fa-instagram"></i></a></li>
+						<li><a ><i class="fa fa-linkedin"></i></a></li>
+						<li><a ><i class="fa fa-youtube"></i></a></li>
+					</ul>
+					<!-- /footer follow -->
+
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+						<p>Copyright © <script>
+						   var date = new Date();
+						   var year = date.getFullYear();
+						   document.write(year);
+						</script>. All Rights Reserve by Web Whatsapp</a></p>
+					</div>
+					<!-- /footer copyright -->
+
+				</div>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</footer>
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader -->
+	<script type="text/javascript" src="../javascripts/landingpage/jquery.min.js"></script>
+	<script type="text/javascript" src="../javascripts/landingpage/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../javascripts/landingpage/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="../javascripts/landingpage/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="../javascripts/landingpage/main.js"></script>
+	<script type="text/javascript" src="../javascripts/landingpage/landingpage.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89586754-4"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-89586754-4');
+	</script>
+	
+</body>
+
+</html>

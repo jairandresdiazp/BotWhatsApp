@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta name="google" content="notranslate" />
+      <meta name="description" content="Allows you to send messages automatically from a WhatsApp account" />
+      <meta name="google" content="notranslate" />
+      <meta content="IE=edge" http-equiv="X-UA-Compatible">
+      <meta charset="utf-8">
+      <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+      <title><%= headtitle %></title>
+      <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+      <link href="../stylesheets/commercialpage/code.css" rel="stylesheet" />
+      <link href="../stylesheets/commercialpage/site.css" rel="stylesheet" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89586754-4"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-89586754-4');
+	</script>
+   </head>
+   <body class="index">
+      <div class="container">
+         <header class="row">
+            <div class="logo">
+               <a href="/"><img src="./images/commercialpage/logo.png" alt="Web-WhataApp" width="50px"></a>
+            </div>
+            <nav>
+               <ul class="menu">
+                  <li><a href="/">Docs</a></li>
+                  <li><a class="text-subdue" target="_blank" href="https://github.com/jairandresdiazp">Github</a></li>
+               </ul>
+            </nav>
+         </header>
+         <div class="chat">
+            <div class="wrapper row">
+               <div class="content">
+                  <h1 class="text-white">The simplest WhatsApp API in the world</h1>
+                  <div class="intro">
+                     <a class="button btn-main" href="/pricing">Pricing</a>
+                     <a class="button" href="/contact">Contact</a>
+                  </div>
+                  <div class="message two-small">
+                     <div class="window">
+                        <img src="./images/commercialpage/Buttons.png" width="50px" />
+                     </div>
+                     <div class="code">
+                        <pre class="highlight javascript"><code><span class="kr">var</span> <span class="nx">express</span> <span class="o">=</span> <span class="kr">require</span><span class="p">(</span><span class="s1">'express'</span><span class="p">)</span><span class="p">;</span>
+<span class="kr">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">bodyParser</span><span class="p">.</span><span class="nx">json</span><span class="p">({</span>
+    <span class="nx">type</span><span class="p">:</span> <span class="s1">'application/json'</span>
+<span class="p">}));</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">bodyParser</span><span class="p">.</span><span class="nx">urlencoded</span><span class="p">){</span>
+    <span class="nx">extended</span><span class="p">:</span> <span class="kr">false</span>
+<span class="p">}));</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">cookieParser</span><span class="p">())</span><span class="p">;</span>
+
+<span class="kr">var</span> <span class="nx">router</span> <span class="o">=</span> <span class="nx">express</span><span class="p">.</span><span class="nx">Router</span><span class="p">()</span><span class="p">;</span>
+<span class="nx">router</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s1">'/webkooh'</span><span class="p">, </span><span class="nx">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span><span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">body</span><span class="p">)</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">headers</span><span class="p">)</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">params</span><span class="p">)</span><span class="p">;</span>
+<span class="p">})</span><span class="p">;</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span></span><span class="s1">3000</span><span class="p">);</span> 
+</code></pre>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="grid row">
+            <div class="grid-item">
+               <h2 class="grid-item-title">Simple</h2>
+               <p>Create expressive interactive integrations without dealing with &nbsp; low-level details.</p>
+            </div>
+            <div class="grid-item">
+               <h2 class="grid-item-title">Realtime</h2>
+               <p>The messages are processed in real time by both ends generating better opportunity.</p>
+            </div>
+            <div class="grid-item">
+               <h2 class="grid-item-title">Flexible</h2>
+               <p>Use components from the ecosystem to add additional capabilities to your API.</p>
+            </div>
+            <div class="grid-item">
+               <h2 class="grid-item-title">Familiar</h2>
+               <p>Built ontop of proven technolgies Node.js, Javascript and &nbsp;Express.js</p>
+            </div>
+         </div>
+         <footer>
+            <script>
+               var date = new Date();
+               var year = date.getFullYear();
+               document.write('<p class="text-center text-subdue">&copy; ' + year + ' Jair Diaz</p>');
+            </script>
+         </footer>
+      </div>
+   </body>
+</html>

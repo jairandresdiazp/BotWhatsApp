@@ -1,0 +1,1 @@
+var wab_url = 'web-whatsapp.azurewebsites.net';
